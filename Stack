@@ -1,0 +1,26 @@
+class stack():
+    def __init__(self):
+        self.items = []
+
+    def isEmpty(self):
+        return self.items == []
+
+    def push(self,item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def peek():
+        return self.items[-1]
+
+
+s=stack()
+s.push(1)
+s.push('Two')
+s.push(3)
+s.pop()
+s.pop()
+s.isEmpty()
+s.pop()
+s.isEmpty()
