@@ -1,0 +1,27 @@
+class queue():
+    def __init__(self):
+        self.items = []
+
+    def isEmpty(self):
+        return self.items == []
+
+    def enqueue(self,item):
+        self.items.append(item)
+
+    def dequeue(self):
+        if self.items==[]:
+            return "queue is empty"
+        else:
+            temp = self.items[0]
+            del self.items[0]
+            return temp
+q=queue()
+q.enqueue(1)
+q.enqueue(2)
+q.enqueue(3)
+q.isEmpty()
+q.dequeue()
+q.dequeue()
+q.isEmpty()
+q.dequeue()
+q.isEmpty()
